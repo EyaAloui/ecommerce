@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Boutique</title>
+	<title>Shop</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -70,30 +70,31 @@
 						<img src="images/cme/cmeLogo.png" alt="IMG-LOGO">
 					</a>
 
+					
 					<!-- Menu desktop -->
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="{{path ('app_front') }}">Accueil</a>
-							
+								<a href="{{path ('app_front')}}">Home</a>
+								
 							</li>
+
+							<li>
+								<a href="{{path ('app_boutique') }}">Shop</a>
+							</li>
+
+							<li class="label1" data-label1="Cart">
+								<a href="{{path ('app_shoping_cart') }}">Features</a>
+							</li>
+
+					
 
 							<li class="active-menu">
-								<a href="{{path ('app_boutique') }}">Boutique</a>
-							</li>
-
-							<li class="label1" data-label1="panier">
-								<a href="{{path ('app_shoping_cart') }}">Mes Commandes</a>
-							</li>
-
-							
-
-							<li>
-								<a href="about.html">A propos</a>
+								<a href="{{ path ('app_about')}}">About</a>
 							</li>
 
 							<li>
-								<a href="contact.html">Contact</a>
+								<a href="{{path ('app_contact')}}">Contact</a>
 							</li>
 						</ul>
 					</div>	
@@ -171,7 +172,7 @@
 
 			<ul class="main-menu-m">
 	 			<li>
-					<a href="{{path ('app_front')}}">Accueil</a>
+					<a href="{{path ('app_front')}}">Home</a>
 					
 					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -179,16 +180,16 @@
 				</li>
 
 				<li>
-					<a href="{{path ('app_boutique') }}">Boutique</a>
+					<a href="{{path ('app_boutique') }}">Shop</a>
 				</li>
 
 				<li>
-					<a href="{{path ('app_shoping_cart') }}" class="label1 rs1" data-label1="hot">Mes Commandes</a>
+					<a href="{{path ('app_shoping_cart') }}" class="label1 rs1" data-label1="hot">Factures</a>
 				</li>
 *
 
 				<li>
-					<a href="{{ path ('app_about')}}">A propos</a>
+					<a href="{{ path ('app_about')}}">About</a>
 				</li>
 
 				<li>
@@ -208,7 +209,7 @@
 		<div class="header-cart flex-col-l p-l-65 p-r-25">
 			<div class="header-cart-title flex-w flex-sb-m p-b-8">
 				<span class="mtext-103 cl2">
-					Panier
+					cart
 				</span>
 
 				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
@@ -245,11 +246,11 @@
 
 					<div class="header-cart-buttons flex-w w-full">
 						<a href="{{path ('app_shoping_cart') }}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-6 m-b-10">
-							Voir panier
+							View Cart
 						</a>
 
 						<a href="{{path ('app_shoping_cart') }}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							Valider
+							confirm
 						</a>
 					</div>
 				</div>
@@ -264,7 +265,7 @@
 			<div class="flex-w flex-sb-m p-b-52">
 				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-						Voir tous
+						see more
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
@@ -272,11 +273,11 @@
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
-						Evenement
+						Event
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
-						Sécutité
+						Sécutity
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
@@ -284,7 +285,7 @@
 					</button>
 
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-						Eléctronique
+						Eléctronic
 					</button>
 					<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
 						IOT
@@ -296,7 +297,7 @@
 					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
 						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
 						<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
-						Recherche
+						search
 					</div>
 				</div>
 				
@@ -322,7 +323,7 @@
 							<img src="images/product-01.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								voir
+								view more
 							</a>
 						</div>
 
@@ -354,7 +355,7 @@
 							<img src="images/product-02.jpg" alt="IMG-PRODUCT">
 
 							<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg01 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-								Voir
+								view more
 							</a>
 						</div>
 
@@ -387,7 +388,7 @@
 			<!-- Load more -->
 			<div class="flex-c-m flex-w w-full p-t-45">
 				<a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
-					Voir plus
+					view more
 				</a>
 			</div>
 		</div>
@@ -412,7 +413,7 @@
 
 						<li class="p-b-10">
 							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-								Electronique
+								Electronic
 							</a>
 						</li>
 
@@ -429,7 +430,7 @@
 						</li>
 						<li class="p-b-10">
 							<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-								Securité
+								Security
 							</a>
 						</li>
 						<li class="p-b-10">
@@ -467,13 +468,12 @@
 
 				<div class="col-sm-6 col-lg-3 p-b-50">
 					<h4 class="stext-301 cl0 p-b-30">
-					ENTRER EN CONTACT
+					 CONTACT
 					</h4>
 
 					<p class="stext-107 cl7 size-201">
-						Des questions ? Faites-le nous savoir en notre société au 40 Rue 4713 Cité Essalama Ezzouhour 4 - Tunis <br>ou appelez-nous au (+216)20.577.205 /<br> 71.228.959
+						Any questions? Let us know in our company at 40 Rue 4713 Cité Essalama Ezzouhour 4 - Tunis <br>or call us on (+216)20.577.205 /<br> 71.228.959
 					</p>
-
 					<div class="p-t-27">
 						<a href="https://www.facebook.com/cme.tn/?locale=fr_FR" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
 							<i class="fa fa-facebook"></i>
@@ -636,7 +636,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 										</div>
 
 										<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-											Ajouter au panier
+											add to cart
+
 										</button>
 									</div>
 								</div>	
